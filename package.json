@@ -1,0 +1,34 @@
+{
+  "name": "dsh-mobile-friendly",
+  "version": "0.1.0",
+  "description": "Mobile-friendly display adaptation layer for the DeepSeek Harness Web GUI — makes the Settings dialog and generic dialogs usable on phones. · DSH Web 界面的移动端显示适配层：让设置弹窗与通用对话框在手机上可用。",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "client",
+    "README.md"
+  ],
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "mobile",
+    "responsive"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "license": "MIT"
+}

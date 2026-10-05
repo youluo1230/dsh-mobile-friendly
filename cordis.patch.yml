@@ -1,0 +1,5 @@
+# dsh-mobile-friendly bundle patch: insert one row named after the package so
+# the loader roster includes it and the client-modules scan picks up dsh.client.
+- insert:
+    - id: dsh-mobile-friendly
+      name: dsh-mobile-friendly
